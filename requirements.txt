@@ -1,0 +1,5 @@
+# Xiaomi Smart Band 7 BLE Flasher Dependencies
+dbus-python>=1.3.2
+PyGObject>=3.46.0
+pycryptodome>=3.20.0
+requests>=2.31.0
