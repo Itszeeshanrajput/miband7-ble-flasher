@@ -50,7 +50,8 @@ class BLEConnectionManager:
         try:
             dev.Connect()
         except Exception as e:
-            if "AlreadyConnected" not in str(e):
+            err_str = str(e)
+            if "AlreadyConnected" not in err_str and "InProgress" not in err_str:
                 raise e
 
         for _ in range(timeout_sec * 2):
